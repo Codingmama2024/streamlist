@@ -1,19 +1,21 @@
+// src/components/NavBar.js
 import React from 'react';
-import { Link } from 'react-router-dom';
-import './NavBar.css'; // Optional for custom styling
+import './NavBar.css';
+import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const NavBar = ({ totalItems }) => { // Changed 'cartCount' to 'totalItems'
   return (
     <nav className="navbar">
-      <h2>StreamList</h2>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/movies">Movies</Link></li>
-        <li><Link to="/cart">Cart</Link></li>
-        <li><Link to="/about">About</Link></li>
-      </ul>
+      <h1>StreamList</h1>
+      <div>
+        <Link to="/">Home</Link>
+        <Link to="/movies">Movies</Link>
+        <Link to="/subscriptions">Subscriptions</Link>
+        <Link to="/accessories">Accessories</Link>
+        <Link to="/cart">Cart ({totalItems})</Link> {/* Now using the correct prop name */}
+      </div>
     </nav>
   );
 };
 
-export default Navbar;
+export default NavBar;

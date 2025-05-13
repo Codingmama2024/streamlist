@@ -1,0 +1,55 @@
+.home-container {
+    background-color: #000;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .hero {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .hero h1 {
+    color: #ff2e2e;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    color: #ddd;
+  }
+  
+  .stream-form {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .stream-form input {
+    padding: 0.7rem 1rem;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    font-size: 1rem;
+  }
+  
+  .stream-form button {
+    padding: 0.7rem 1.5rem;
+    background-color: #ff2e2e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .stream-form button:hover {
+    background-color: #e60000;
+  }
+  
